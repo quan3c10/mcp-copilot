@@ -63,7 +63,7 @@ npx playwright install
 To run tests in headless mode (for CI/CD):
 
 ```bash
-npx playwright test --project=chromium --headed=false
+npx playwright test --project=chromium
 ```
 
 ### Headed Mode

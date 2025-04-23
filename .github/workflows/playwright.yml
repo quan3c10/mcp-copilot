@@ -26,7 +26,8 @@ jobs:
         run: npx playwright install --with-deps chromium firefox webkit
 
       - name: Run Playwright tests
-        run: npx playwright test --project=chromium --headed=false
+        run: npx playwright test --project=chromium
+        # Removed the incorrect --headed=false flag
 
       - name: Upload test results
         if: always()
